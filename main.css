@@ -1,3 +1,98 @@
+body,
+html {
+  width: 100%;
+  font-family: "Open Sans", "Roboto", "Calibri", "Arial", sans-serif;
+  margin: 0;
+}
 
+header {
+  display: flex;
+  width: 100%;
+  background-color: #e6e6e6;
+  height: 50px;
+  font-size: 0.8rem;
+  flex-wrap: nowrap;
+  border-bottom: 2px solid lightgrey;
+}
+header .title_container {
+  display: flex;
+  height: 100%;
+}
+header .title_container .title_link {
+  height: 50px;
+  display: flex;
+  letter-spacing: 0.5px;
+  line-height: 50px;
+  padding: 0 1rem;
+  color: black;
+}
+header .title_container .title_link:hover {
+  cursor: pointer;
+}
+header .nav-menu {
+  display: flex;
+  height: 100%;
+}
+header .nav-menu .menu-link {
+  height: 50px;
+  text-decoration: none;
+  background-color: #e6e6e6;
+  color: black;
+  padding: 0 1rem;
+  border-bottom: 2px solid lightgrey;
+  line-height: 50px;
+}
+header .nav-menu .menu-link:hover {
+  border-color: #ffabab;
+  cursor: pointer;
+}
+header .nav-menu .menu-link.active {
+  background-color: lightgrey;
+  border-color: transparent;
+}
+header .menu-social {
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem;
+  border-bottom: 2px solid transparent;
+}
+header .menu-social:hover img {
+  filter: none;
+}
+header .menu-social.facebook:hover {
+  border-color: #3b5998;
+}
+header .menu-social.instagram:hover {
+  border-color: #cd486b;
+}
+header .menu-social.linkedin:hover {
+  border-color: #4875b4;
+}
+
+nav,
+ul,
+li,
+a {
+  display: flex;
+  letter-spacing: 0.5px;
+  height: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+.nav-social {
+  margin-left: auto;
+  margin-right: 0.5rem;
+}
+
+.menu-social img {
+  height: 20px;
+  width: 20px;
+  filter: grayscale(100%);
+}
+
+/* ------ MAIN CONTENT ------ */
 
 /*# sourceMappingURL=main.css.map */
