@@ -43,7 +43,7 @@ header .nav-menu .menu-link {
   line-height: 50px;
 }
 header .nav-menu .menu-link:hover {
-  border-color: #ffabab;
+  border-color: black;
   cursor: pointer;
 }
 header .nav-menu .menu-link.active {
