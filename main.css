@@ -3,6 +3,7 @@ html {
   width: 100%;
   font-family: "Open Sans", "Roboto", "Calibri", "Arial", sans-serif;
   margin: 0;
+  background-color: #f4f4f4;
 }
 
 header {
@@ -19,6 +20,7 @@ header .title_container {
   height: 100%;
 }
 header .title_container .title_link {
+  white-space: nowrap;
   height: 50px;
   display: flex;
   letter-spacing: 0.5px;
@@ -94,5 +96,48 @@ a {
 }
 
 /* ------ MAIN CONTENT ------ */
+main .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-flow: wrap;
+  margin: 5px 0;
+}
+main .container img {
+  background-color: white;
+  flex-grow: 0;
+  width: 300px;
+  height: 300px;
+  padding: 15px;
+  border: 1px solid lightgrey;
+  margin: 5px;
+}
+main .container img:hover {
+  background-color: #e6e6e6;
+}
+
+/* ------ FOOTER CONTENT ------ */
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: #e6e6e6;
+  border-top: 2px solid lightgrey;
+}
+.footer-container a {
+  display: flex;
+  align-items: center;
+  color: black;
+  line-height: 50px;
+  font-size: 0.8rem;
+  padding: 0 1rem;
+  border-top: 2px solid transparent;
+}
+.footer-container a:hover {
+  border-color: black;
+}
 
 /*# sourceMappingURL=main.css.map */
