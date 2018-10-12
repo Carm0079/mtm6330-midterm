@@ -15,11 +15,11 @@ header {
   flex-wrap: nowrap;
   border-bottom: 2px solid lightgrey;
 }
-header .title_container {
+header .title-container {
   display: flex;
   height: 100%;
 }
-header .title_container .title_link {
+header .title-container .title-link {
   white-space: nowrap;
   height: 50px;
   display: flex;
@@ -28,7 +28,7 @@ header .title_container .title_link {
   padding: 0 1rem;
   color: black;
 }
-header .title_container .title_link:hover {
+header .title-container .title-link:hover {
   cursor: pointer;
 }
 header .nav-menu {
