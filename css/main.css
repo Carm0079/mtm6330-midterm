@@ -15,11 +15,13 @@ header {
   flex-wrap: nowrap;
   border-bottom: 2px solid lightgrey;
 }
+
 header .title-container {
   display: flex;
   height: 100%;
 }
-header .title-container .title-text {
+
+header .title-container .title-link {
   white-space: nowrap;
   height: 50px;
   display: flex;
@@ -28,13 +30,16 @@ header .title-container .title-text {
   padding: 0 1rem;
   color: black;
 }
-header .title-container .title-text:hover {
+
+header .title-container .title-link:hover {
   cursor: pointer;
 }
+
 header .nav-menu {
   display: flex;
   height: 100%;
 }
+
 header .nav-menu .menu-link {
   height: 50px;
   text-decoration: none;
@@ -44,39 +49,37 @@ header .nav-menu .menu-link {
   border-bottom: 2px solid lightgrey;
   line-height: 50px;
 }
+
 header .nav-menu .menu-link:hover {
   border-color: black;
   cursor: pointer;
 }
+
 header .nav-menu .menu-link.active {
   background-color: lightgrey;
   border-color: transparent;
 }
-header .nav-social {
-  margin-left: auto;
-  margin-right: 0.5rem;
-}
-header .nav-social .menu-social {
+
+header .menu-social {
   display: flex;
   align-items: center;
   padding: 0 0.5rem;
   border-bottom: 2px solid transparent;
 }
-header .nav-social .menu-social img {
-  height: 20px;
-  width: 20px;
-  filter: grayscale(100%);
-}
-header .nav-social .menu-social:hover img {
+
+header .menu-social:hover img {
   filter: none;
 }
-header .nav-social .menu-social.facebook:hover {
+
+header .menu-social.facebook:hover {
   border-color: #3b5998;
 }
-header .nav-social .menu-social.instagram:hover {
+
+header .menu-social.instagram:hover {
   border-color: #cd486b;
 }
-header .nav-social .menu-social.linkedin:hover {
+
+header .menu-social.linkedin:hover {
   border-color: #4875b4;
 }
 
@@ -93,9 +96,19 @@ a {
   text-decoration: none;
 }
 
+.nav-social {
+  margin-left: auto;
+  margin-right: 0.5rem;
+}
+
+.menu-social img {
+  height: 20px;
+  width: 20px;
+  filter: grayscale(100%);
+}
+
 /* ------ MAIN CONTENT ------ */
-/* ------ INDEX CONTENT ------ */
-#index main .container {
+main .container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,7 +116,8 @@ a {
   flex-flow: wrap;
   margin: 5px 0;
 }
-#index main .container .work-img {
+
+main .container img {
   background-color: white;
   flex-grow: 0;
   width: 300px;
@@ -112,27 +126,9 @@ a {
   border: 1px solid lightgrey;
   margin: 5px;
 }
-#index main .container .work-img:hover {
-  background-color: #e6e6e6;
-}
 
-/* ------ ABOUT CONTENT ------ */
-#about main .container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  flex-flow: wrap;
-  margin: 5px auto;
-}
-#about main .container .container-image {
-  width: calc(30%);
-}
-#about main .container .container-image .about-img {
-  width: 100%;
-}
-#about main .container .container-text {
-  width: calc(30%);
-  margin: 0 0 0 5px;
+main .container img:hover {
+  background-color: #e6e6e6;
 }
 
 /* ------ FOOTER CONTENT ------ */
@@ -145,6 +141,7 @@ a {
   background-color: #e6e6e6;
   border-top: 2px solid lightgrey;
 }
+
 .footer-container a {
   display: flex;
   align-items: center;
@@ -154,6 +151,7 @@ a {
   padding: 0 1rem;
   border-top: 2px solid transparent;
 }
+
 .footer-container a:hover {
   border-color: black;
 }
