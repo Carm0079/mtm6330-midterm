@@ -33,7 +33,7 @@ header {
       color: black;
 
       &:hover {
-        cursor: pointer;
+        cursor: default;
       }
     }
   }
@@ -53,7 +53,6 @@ header {
 
       &:hover {
         border-color: black;
-        cursor: pointer;
       }
 
       &.active {
@@ -151,19 +150,70 @@ a {
     justify-content: center;
     flex-direction: column;
     flex-flow: wrap;
-    margin: 5px auto;
+    margin: 10px auto;
+    height: calc(100vh - 125px);
 
     .container-image {
-      width: calc(30%);
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
 
       .about-img {
-        width: 100%;
+        width: 300px;
+        padding: 15px;
+        border: 1px solid $selection-border-color;
+        background-color: white;
       }
     }
 
     .container-text {
-      width: calc(30%);
-      margin: 0 0 0 5px;
+      margin: 0 0 0 10px;
+
+      h1 {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+/* ------ CONTACT CONTENT ------ */
+
+#contact main {
+  .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: calc(100vh - 105px);
+
+    .container-text {
+      display: flex;
+      flex-direction: column;
+      width: calc(100% - 10px);
+      margin-top: 10px;
+      margin-left: 10px;
+
+      p {
+        padding-left: 12px;
+        margin: 0;
+
+        &:last-child {
+          margin-bottom: 16px;
+        }
+      }
+
+      h1 {
+        margin: 0;
+      }
+
+      .link-social {
+        color: black;
+        border-left: 2px solid transparent;
+        padding-left: 10px;
+
+        &:hover {
+          border-color: black;
+        }
+      }
     }
   }
 }
