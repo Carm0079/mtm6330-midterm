@@ -52,7 +52,8 @@ header {
     @media screen and (max-width: 700px) {
       header .nav-menu {
         visibility: hidden;
-        width: 0; } }
+        width: 0;
+        margin: 0; } }
     header .nav-menu .menu-link {
       height: 50px;
       text-decoration: none;
@@ -72,7 +73,8 @@ header {
     @media screen and (max-width: 700px) {
       header .nav-social {
         visibility: hidden;
-        width: 0; } }
+        width: 0;
+        margin: 0; } }
     header .nav-social .menu-social {
       display: flex;
       align-items: center;
@@ -116,7 +118,7 @@ a {
     background-color: white;
     flex-grow: 0;
     width: 300px;
-    height: 300px;
+    height: auto;
     padding: 15px;
     border: 1px solid lightgrey;
     margin: 5px; }
@@ -131,23 +133,32 @@ a {
 #about main .container {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  align-content: flex-start;
+  flex-direction: row;
   flex-flow: wrap;
-  margin: 10px auto;
-  height: calc(100vh - 125px); }
+  margin: 10px auto; }
   #about main .container .container-image {
     display: flex;
     justify-content: center;
-    align-items: flex-start; }
+    align-items: flex-start;
+    width: 400px; }
     #about main .container .container-image .about-img {
-      width: 300px;
+      width: calc(100% - 32px);
+      height: auto;
       padding: 15px;
       border: 1px solid lightgrey;
       background-color: white; }
   #about main .container .container-text {
+    width: 400px;
     margin: 0 0 0 10px; }
+    #about main .container .container-text p {
+      padding-left: 12px;
+      margin: 0; }
     #about main .container .container-text h1 {
       margin-top: 0; }
+    @media screen and (max-width: 700px) {
+      #about main .container .container-text {
+        margin: 0; } }
 
 /* ------ CONTACT CONTENT ------ */
 #contact main {

@@ -71,6 +71,7 @@ header {
     @media screen and (max-width: 700px) {
       visibility: hidden;
       width: 0;
+      margin: 0;
     }
 
     .menu-link {
@@ -103,6 +104,7 @@ header {
     @media screen and (max-width: 700px) {
       visibility: hidden;
       width: 0;
+      margin: 0;
     }
 
     .menu-social {
@@ -166,7 +168,7 @@ a {
       background-color: white;
       flex-grow: 0;
       width: 300px;
-      height: 300px;
+      height: auto;
       padding: 15px;
       border: 1px solid $selection-border-color;
       margin: 5px;
@@ -189,18 +191,20 @@ a {
   .container {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    align-content: flex-start;
+    flex-direction: row;
     flex-flow: wrap;
     margin: 10px auto;
-    height: calc(100vh - 125px);
 
     .container-image {
       display: flex;
       justify-content: center;
       align-items: flex-start;
+      width: 400px;
 
       .about-img {
-        width: 300px;
+        width: calc(100% - 32px);
+        height: auto;
         padding: 15px;
         border: 1px solid $selection-border-color;
         background-color: white;
@@ -208,10 +212,20 @@ a {
     }
 
     .container-text {
+      width: 400px;
       margin: 0 0 0 10px;
+
+      p {
+        padding-left: 12px;
+        margin: 0;
+      }
 
       h1 {
         margin-top: 0;
+      }
+
+      @media screen and (max-width: 700px) {
+        margin: 0;
       }
     }
   }
@@ -221,6 +235,7 @@ a {
 
 #contact main {
   height: calc(100vh - 115px);
+
   .container-text {
     display: flex;
     justify-content: flex-start;
