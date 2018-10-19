@@ -38,9 +38,40 @@ header {
     }
   }
 
+  @media screen and (max-width: 700px) {
+    align-items: center;
+  }
+
+  .nav-hamburger {
+    visibility: hidden;
+
+    @media screen and (max-width: 700px) {
+      display: inline-block;
+      align-items: center;
+      visibility: visible;
+      margin-left: auto;
+      height: auto;
+      padding: 0 1rem;
+      cursor: pointer;
+
+      .bar {
+        width: 30px;
+        height: 4px;
+        background-color: darkgrey;
+        border-radius: 1rem;
+        margin: 6px 0;
+      }
+    }
+  }
+
   .nav-menu {
     display: flex;
     height: 100%;
+
+    @media screen and (max-width: 700px) {
+      visibility: hidden;
+      width: 0;
+    }
 
     .menu-link {
       height: 50px;
@@ -68,6 +99,11 @@ header {
   .nav-social {
     margin-left: auto;
     margin-right: 0.5rem;
+
+    @media screen and (max-width: 700px) {
+      visibility: hidden;
+      width: 0;
+    }
 
     .menu-social {
       display: flex;
@@ -135,6 +171,11 @@ a {
       border: 1px solid $selection-border-color;
       margin: 5px;
 
+      @media screen and (max-width: 700px) {
+        width: 80%;
+        height: auto;
+      }
+
       &:hover {
         background-color: #e6e6e6;
       }
@@ -179,40 +220,37 @@ a {
 /* ------ CONTACT CONTENT ------ */
 
 #contact main {
-  .container {
+  height: calc(100vh - 115px);
+  .container-text {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    height: calc(100vh - 105px);
+    flex-direction: column;
+    width: calc(100% - 10px);
 
-    .container-text {
-      display: flex;
-      flex-direction: column;
-      width: calc(100% - 10px);
-      margin-top: 10px;
-      margin-left: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
 
-      p {
-        padding-left: 12px;
-        margin: 0;
+    p {
+      padding-left: 12px;
+      margin: 0;
 
-        &:last-child {
-          margin-bottom: 16px;
-        }
+      &:last-child {
+        margin-bottom: 16px;
       }
+    }
 
-      h1 {
-        margin: 0;
-      }
+    h1 {
+      margin: 0;
+    }
 
-      .link-social {
-        color: black;
-        border-left: 2px solid transparent;
-        padding-left: 10px;
+    .link-social {
+      color: black;
+      border-left: 2px solid transparent;
+      padding-left: 10px;
 
-        &:hover {
-          border-color: black;
-        }
+      &:hover {
+        border-color: black;
       }
     }
   }
