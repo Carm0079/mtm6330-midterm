@@ -4,6 +4,7 @@ $selection-border-color: lightgrey;
 
 body,
 html {
+  min-width: 320px;
   width: 100%;
   font-family: 'Open Sans', 'Roboto', 'Calibri', 'Arial', sans-serif;
   margin: 0;
