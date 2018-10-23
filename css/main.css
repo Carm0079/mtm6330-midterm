@@ -66,7 +66,39 @@ header {
       header .nav-menu {
         visibility: hidden;
         width: 0;
-        margin: 0; } }
+        margin: 0; }
+        header .nav-menu.open {
+          display: block;
+          visibility: visible;
+          position: absolute;
+          width: 100%;
+          top: 49.5px;
+          height: auto;
+          transition: 0.4s; }
+          header .nav-menu.open ul {
+            display: block;
+            height: auto; }
+            header .nav-menu.open ul li {
+              height: auto;
+              width: 100%; }
+              header .nav-menu.open ul li .menu-link {
+                width: 100%;
+                border: 0px;
+                display: flex;
+                justify-content: space-between; }
+                header .nav-menu.open ul li .menu-link.active {
+                  background-color: #e6e6e6; }
+                  header .nav-menu.open ul li .menu-link.active .arrow {
+                    filter: opacity(100%); }
+                header .nav-menu.open ul li .menu-link .arrow {
+                  align-self: center;
+                  visibility: visible;
+                  width: 25px;
+                  height: 25px;
+                  padding: auto;
+                  filter: opacity(10%); }
+                header .nav-menu.open ul li .menu-link:hover {
+                  background-color: lightgrey; } }
     header .nav-menu .menu-link {
       height: 50px;
       text-decoration: none;
@@ -75,6 +107,9 @@ header {
       padding: 0 1rem;
       border-bottom: 2px solid lightgrey;
       line-height: 50px; }
+      header .nav-menu .menu-link .arrow {
+        visibility: hidden;
+        width: 0; }
       header .nav-menu .menu-link:hover {
         border-color: black; }
       header .nav-menu .menu-link.active {
